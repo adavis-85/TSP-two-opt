@@ -2,8 +2,9 @@
 
    One way to find a faster solution to the TSP problem is to use a two-opt algorithm.  The two-opt is a local search 
 algorithm.  The basic idea to the procedure is to search for two sets of points on the route and arrange them so 
-that they don't cross.  If the cost of this new path is less than the one before then the new path is kept.  The search isstopped after a swap that doesn't result in a decreased total cost.  
-    ```
+that they don't cross.  If the cost of this new path is less than the one before then the new path is kept.  The search isstopped after a swap that doesn't result in a decreased total cost. 
+
+```
     for i in range(1,len(old_route)-2):
         
         for k in range(i+2,len(old_route)):
@@ -21,6 +22,7 @@ that they don't cross.  If the cost of this new path is less than the one before
                     end=perf_counter() 
                 else:
                     break
+                    
  ```
  Starting at the second point, which is the first node traveled to, the benefit of switching two nodes on the path is
  searched.  If the cost of this test is less than the incumbent value, then the new incumbent value is this minimized
