@@ -1,9 +1,8 @@
 # TSP-two-opt
 
-          One way to find a faster solution to the TSP problem is to use a two-opt algorithm.  The two-opt is a local search 
-    algorithm.  The basic idea to the procedure is to search for two sets of points on the route and arrange them so 
-    that they don't cross.  If the cost of this new path is less than the one before then the new path is kept.  The search is 
-    stopped after a swap that doesn't result in a decreased total cost.  
+   One way to find a faster solution to the TSP problem is to use a two-opt algorithm.  The two-opt is a local search 
+algorithm.  The basic idea to the procedure is to search for two sets of points on the route and arrange them so 
+that they don't cross.  If the cost of this new path is less than the one before then the new path is kept.  The search isstopped after a swap that doesn't result in a decreased total cost.  
     ```
     for i in range(1,len(old_route)-2):
         
